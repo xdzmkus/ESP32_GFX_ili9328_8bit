@@ -1,0 +1,96 @@
+menu "GFX LCD Configuration"
+
+    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
+
+    config LCD_RST_GPIO
+        int "LCD_RST GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 5
+        help
+            GPIO number (IOxx) of LCD_RST
+
+    config LCD_CS_GPIO
+        int "LCD_CS GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 6
+        help
+            GPIO number (IOxx) of LCD_CS
+
+    config LCD_RS_GPIO
+        int "LCD_RS GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 7
+        help
+            GPIO number (IOxx) of LCD_RS
+
+    config LCD_WR_GPIO
+        int "LCD_WR GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 1
+        help
+            GPIO number (IOxx) of LCD_WR
+
+    config LCD_RD_GPIO
+        int "LCD_RD GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 2
+        help
+            GPIO number (IOxx) of LCD_RD
+
+    config LCD_DB0_GPIO
+        int "LCD_DB0 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 21
+        help
+            GPIO number (IOxx) of LCD_DB0
+
+    config LCD_DB1_GPIO
+        int "LCD_DB1 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 46
+        help
+            GPIO number (IOxx) of LCD_DB1
+
+    config LCD_DB2_GPIO
+        int "LCD_DB2 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 18
+        help
+            GPIO number (IOxx) of LCD_DB2
+
+    config LCD_DB3_GPIO
+        int "LCD_DB3 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 17
+        help
+            GPIO number (IOxx) of LCD_DB3
+
+    config LCD_DB4_GPIO
+        int "LCD_DB4 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 19
+        help
+            GPIO number (IOxx) of LCD_DB4
+
+    config LCD_DB5_GPIO
+        int "LCD_DB5 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 20
+        help
+            GPIO number (IOxx) of LCD_DB5
+
+    config LCD_DB6_GPIO
+        int "LCD_DB6 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 3
+        help
+            GPIO number (IOxx) of LCD_DB6
+
+    config LCD_DB7_GPIO
+        int "LCD_DB7 GPIO number"
+		range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 14
+        help
+            GPIO number (IOxx) of LCD_DB7
+
+endmenu
